@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ctp.swissknife.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/backGround">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testBtn"
+        android:text="Test"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SWISS KNIFE"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/bladeone"
+        android:id="@+id/bladeOne"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/contactblade"
+        android:id="@+id/contactblade"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/redialblade"
+        android:id="@+id/redialblade"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bladeOne"
+        android:layout_marginStart="17dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:src="@drawable/mapblade"
+        android:id="@+id/mapBlade"
+        android:layout_below="@+id/testBtn"
+        android:layout_alignStart="@+id/bladeOne" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/alarmblade"
+        android:id="@+id/alarmBlade"
+        android:layout_below="@+id/testBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:src="@drawable/calendarblade"
+        android:id="@+id/calendarBlade"
+        android:layout_marginTop="14dp"
+        android:layout_alignTop="@+id/alarmBlade"
+        android:layout_alignEnd="@+id/alarmBlade"
+        android:layout_marginEnd="13dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="450dp"
+        android:src="@drawable/alternatebody"
+        android:scaleType="fitCenter"
+        android:id="@+id/myImage"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/testBtn"
+        android:layout_centerHorizontal="true"
+        android:scaleY="1"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        android:layout_marginTop="25dp"
+        android:id="@+id/mapBtn"
+        android:layout_alignTop="@+id/calendarBlade"
+        android:layout_toEndOf="@+id/closeBtn"
+        android:layout_marginStart="14dp"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textSize="20sp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/calendarBtn"
+        android:layout_alignBottom="@+id/stopwatchBtn"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/redialBtn"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:id="@+id/stopwatchBtn"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/contactBtn"
+        android:layout_alignEnd="@+id/calendarBlade"
+        android:layout_marginEnd="10dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:id="@+id/redialBtn"
+        android:layout_alignBottom="@+id/calendarBlade"
+        android:layout_alignStart="@+id/bladeOne"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/contactBtn"
+        android:layout_below="@+id/alarmBlade"
+        android:layout_alignStart="@+id/stopwatchBtn"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/alarmBtn"
+        android:layout_alignTop="@+id/mapBtn"
+        android:layout_alignStart="@+id/mapBlade"
+        android:visibility="invisible"/>
+
+    <TextView
+    android:layout_width="75dp"
+    android:layout_height="100dp"
+    android:text="@string/touch_here_to_open"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:id="@+id/openBtn"
+    android:layout_alignBottom="@+id/calendarBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:text="@string/touch_here_to_close"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:id="@+id/closeBtn"
+        android:layout_alignBottom="@+id/calendarBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="@string/created_by_clinton_pinto"
+        android:layout_marginTop="460dp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

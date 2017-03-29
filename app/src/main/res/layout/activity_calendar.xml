@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.ctp.swissknife.CalendarActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a Calender Event"
+        android:textSize="23sp"/>
+
+    <EditText
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Whats the event?"
+        android:layout_marginTop="20dp"
+        />
+
+    <Switch
+        android:text="Is your event all day?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/allDaySwitch" />
+
+    <TextView
+        android:id="@+id/startDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date and Time"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:text="Mar 1, 2017"/>
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="180dp"
+        android:gravity="end"
+        android:text="5:00 PM"
+        />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/EndDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date and Time"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:text="Mar 1, 2017"/>
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="180dp"
+        android:gravity="end"
+        android:text="5:00 PM"
+        />
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"/>
+
+
+
+
+</LinearLayout>
